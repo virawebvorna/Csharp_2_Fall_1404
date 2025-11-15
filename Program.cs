@@ -180,21 +180,21 @@
 //Console.WriteLine(numbers[3]);
 
 //نام دانش آموزان
-int count = int.Parse(Console.ReadLine());
-string[] names = new string[count];
-////names[0] = Console.ReadLine();
-////names[1] = Console.ReadLine();
-////names[9] = Console.ReadLine();
+//int count = int.Parse(Console.ReadLine());
+//string[] names = new string[count];
+//////names[0] = Console.ReadLine();
+//////names[1] = Console.ReadLine();
+//////names[9] = Console.ReadLine();
 
-for (int i = 0; i < count; i++)
-{
-    names[i] = Console.ReadLine();
-    //names[0] = ali;
-    //names[1] = reza;
-    //names[2] = mahmood;
-}
+//for (int i = 0; i < count; i++)
+//{
+//    names[i] = Console.ReadLine();
+//    //names[0] = ali;
+//    //names[1] = reza;
+//    //names[2] = mahmood;
+//}
 
-Console.WriteLine("finish");
+//Console.WriteLine("finish");
 
 
 //Person person = new Person();
@@ -208,3 +208,67 @@ Console.WriteLine("finish");
 //    public string LastName = "naderifar";
 //    public int Age = 20;
 //}
+
+
+//int number = int.Parse(Console.ReadLine());
+//double[] score = new double[number];
+
+//for (int i = 0; i < 10; i++)
+//{
+//    score[i] = double.Parse(Console.ReadLine());
+//}
+
+//for (int i = 0; i < number; i++)
+//{
+//    Console.WriteLine(score[i]);
+//}
+
+
+
+//Car Samand = new Car();
+
+//Console.WriteLine("enter Name");
+//Samand.name = Console.ReadLine();
+//Console.WriteLine("enter Brand");
+//Samand.brand = Console.ReadLine();
+//Console.WriteLine("enter Speed");
+//Samand.speed = double.Parse(Console.ReadLine());
+//Console.WriteLine("enter Color");
+//Samand.color = Console.ReadLine();
+//Console.WriteLine("Car Is Electric or no?");
+//Samand.isElectric = bool.Parse(Console.ReadLine());
+//Console.WriteLine("-------------------------------------------");
+//Console.WriteLine(Samand.name);
+//Console.WriteLine(Samand.brand);
+//Console.WriteLine(Samand.speed);
+//Console.WriteLine(Samand.color);
+//Console.WriteLine(Samand.isElectric);
+
+//public class Car
+//{
+//    public string name;
+//    public string brand;
+//    public double speed;
+//    public string color;
+//    public bool isElectric;
+//}
+
+Student ali = new Student();
+ali.firstName = "Ali";
+ali.lastName = "Razavi";
+ali.age = 12;
+
+Student reza = new Student()
+{
+    firstName = "reza",
+    lastName = "Sabzika",
+    age = 12,
+};
+
+
+public class Student
+{
+    public string firstName;
+    public string lastName;
+    public int age;
+}
