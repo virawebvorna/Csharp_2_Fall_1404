@@ -1,5 +1,4 @@
-﻿
-// 1 to 10
+﻿// 1 to 10
 //for (int i = 1; i <= 10; i++)
 //{
 //    Console.WriteLine(i);
@@ -62,7 +61,6 @@
 //Console.WriteLine();
 
 
-
 //int total2 = 0;
 //int j = 1;
 //while (j <= 10)
@@ -75,12 +73,6 @@
 //    j++;
 //}
 //Console.WriteLine(total2 / 10);
-
-
-
-
-
-
 
 
 //int totalScore = 0;
@@ -106,10 +98,8 @@
 //int y = ++i; // x = 6, i = 6
 
 
-
 //Console.WriteLine(x);
 //Console.WriteLine(y);
-
 
 
 //int number = 1;
@@ -224,7 +214,6 @@
 //}
 
 
-
 //Car Samand = new Car();
 
 //Console.WriteLine("enter Name");
@@ -253,22 +242,117 @@
 //    public bool isElectric;
 //}
 
-Student ali = new Student();
-ali.firstName = "Ali";
-ali.lastName = "Razavi";
-ali.age = 12;
+// Student ali = new Student();
+// ali.firstName = "Ali";
+// ali.lastName = "Razavi";
+// ali.age = 12;
+//
+// Student reza = new Student()
+// {
+//     firstName = "reza",
+//     lastName = "Sabzika",
+//     age = 12,
+// };
+//
+//
+// public class Student
+// {
+//     public string firstName;
+//     public string lastName;
+//     public int age;
+// }
 
-Student reza = new Student()
+//1
+
+// Person ali = new Person();
+// ali.firstName = "Ali";
+// ali.lastName = "razavi";
+// ali.fatherName = "mahmod";
+// ali.nationalCode = "1234567890";
+// ali.dateOfBirth = new DateOnly(2025, 5, 10);
+// ali.Gender = Gender.Male;
+// ali.Age = 20;
+// Console.WriteLine(ali.GetInfo());
+//
+// //2
+// Person reza = new Person()
+// {
+//     firstName = "reza",
+//     lastName = "zohrabi",
+//     fatherName = "jafar",
+//     nationalCode = "0987654321",
+//     dateOfBirth = new DateOnly(2022, 5, 10),
+//     Gender = Gender.Boy,
+//     Age = 16
+// };
+// string fullName = reza.GetInfo();
+// Console.WriteLine(fullName);
+// // int age = ali.GetAge();
+// // Console.WriteLine(age);
+// // Console.WriteLine(reza.dateOfBirth);
+// // Console.WriteLine(reza.Gender);
+// // Console.WriteLine(reza.Age);
+//
+// public class Person
+// {
+//     public string firstName { get; set; }
+//     public string lastName { get; set; }
+//     public string fatherName { get; set; }
+//     public string nationalCode { get; set; }
+//     public DateOnly dateOfBirth { get; set; }
+//     public Gender Gender { get; set; }
+//     public int Age { get; set; }
+//
+//     public string GetInfo()
+//     {
+//         // return firstName + " " + lastName;
+//         return $"{firstName} {lastName} {fatherName} {nationalCode} {dateOfBirth} {Gender} {Age}";
+//     }
+//     // public int GetAge()
+//     // {
+//     //     return Age;
+//     // }
+// }
+//
+// public enum Gender
+// {
+//     Male,
+//     Female,
+//     Boy,
+//     Girl
+// }
+Calculator calc1 = new Calculator()
 {
-    firstName = "reza",
-    lastName = "Sabzika",
-    age = 12,
+    FirstNumber = 50,
+    SecondNumber = 10,
+    Operator = Operator.Multiply
 };
+if(calc1.Operator == Operator.Add)
+    Console.WriteLine(calc1.Add());
+else if(calc1.Operator == Operator.Multiply)
+    Console.WriteLine(calc1.Multiply());
 
-
-public class Student
+public class Calculator
 {
-    public string firstName;
-    public string lastName;
-    public int age;
+    public double FirstNumber { get; set; }
+    public double SecondNumber { get; set; }
+    public Operator Operator { get; set; }
+
+    public double Add()
+    {
+        return FirstNumber + SecondNumber;
+    }
+    
+    public double Multiply()
+    {
+        return FirstNumber * SecondNumber;
+    }
+}
+
+public enum Operator
+{
+    Add,
+    Subtract,
+    Multiply,
+    Divide
 }
