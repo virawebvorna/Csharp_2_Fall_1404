@@ -314,45 +314,122 @@
 //     // }
 // }
 //
-// public enum Gender
-// {
-//     Male,
-//     Female,
-//     Boy,
-//     Girl
-// }
-Calculator calc1 = new Calculator()
-{
-    FirstNumber = 50,
-    SecondNumber = 10,
-    Operator = Operator.Multiply
-};
-if(calc1.Operator == Operator.Add)
-    Console.WriteLine(calc1.Add());
-else if(calc1.Operator == Operator.Multiply)
-    Console.WriteLine(calc1.Multiply());
+//public enum Gender
+//{
+//    Male,
+//    Female,
+//    Boy,
+//    Girl
+//}
 
-public class Calculator
-{
-    public double FirstNumber { get; set; }
-    public double SecondNumber { get; set; }
-    public Operator Operator { get; set; }
 
-    public double Add()
+//Calculator calc1 = new Calculator()
+//{
+//    FirstNumber = 50,
+//    SecondNumber = 10,
+//    Operator = Operator.Subtract
+//};
+
+
+//if (calc1.Operator == Operator.Add)
+//    Console.WriteLine(calc1.Add());
+//else if (calc1.Operator == Operator.Multiply)
+//    Console.WriteLine(calc1.Multiply());
+//else if(calc1.Operator == Operator.Subtract)
+//    Console.WriteLine(calc1.Subtract());
+//else if (calc1.Operator == Operator.Divide)
+//    Console.WriteLine(calc1.Divide());
+
+//Console.ReadKey();
+
+//public class Calculator
+//{
+//    public double FirstNumber { get; set; }
+//    public double SecondNumber { get; set; }
+//    public Operator Operator { get; set; }
+
+//    public double Add()
+//    {
+//        return FirstNumber + SecondNumber;
+//    }
+
+//    public double Subtract()
+//    {
+//        return FirstNumber - SecondNumber;
+//    }
+
+//    public double Multiply()
+//    {
+//        return FirstNumber * SecondNumber;
+//    }
+
+//    public double Divide()
+//    {
+//        return FirstNumber / SecondNumber;
+//    }
+//}
+
+
+//public enum Operator
+//{
+//    Add,
+//    Subtract,
+//    Multiply,
+//    Divide
+//}
+//Rectangle rect2 = new Rectangle()
+//{
+//    Height = 50,
+//    Width = 100
+//};
+
+//Rectangle rect1 = new Rectangle();
+//rect1.Width = 100;
+//rect1.Height = 250;
+
+////Console.WriteLine(rect1.Perimeter());
+//Console.WriteLine(rect1.Area(50,rect1.Width,"m"));
+//Console.ReadKey();
+
+//public class Rectangle
+//{
+//    public double Width { get; set; }
+//    public double Height { get; set; }
+
+//    public string Area(double h, double w,string unit)
+//    {
+//        double area = h * w;
+//        return $"{area} {unit}";
+//    }
+
+//    public double Perimeter()
+//    {
+//        return 2 * (Height + Width);
+//    }
+//}
+
+
+//string name = "   reza zohraby   ";
+//Console.WriteLine(name.Trim());
+
+
+//Console.ReadKey();
+
+Circle circle = new Circle();
+Console.WriteLine(circle.Area(3));
+Console.WriteLine(circle.Perimeter(3));
+
+Console.ReadKey();
+
+public class Circle
+{ 
+    public double Area(double r)
     {
-        return FirstNumber + SecondNumber;
+        return r * r * 3.14;
     }
-    
-    public double Multiply()
-    {
-        return FirstNumber * SecondNumber;
-    }
-}
 
-public enum Operator
-{
-    Add,
-    Subtract,
-    Multiply,
-    Divide
+    public double Perimeter(double r)
+    {
+        return 2 * r * 3.14;
+    }
 }
