@@ -381,14 +381,18 @@
 //{
 //    Height = 50,
 //    Width = 100
-//};
+////};
+//Console.WriteLine();
+//Console.WriteLine("hello");
 
 //Rectangle rect1 = new Rectangle();
 //rect1.Width = 100;
 //rect1.Height = 250;
 
-////Console.WriteLine(rect1.Perimeter());
-//Console.WriteLine(rect1.Area(50,rect1.Width,"m"));
+//Console.WriteLine(rect1.Perimeter());
+//Console.WriteLine(rect1.Area());
+//Console.WriteLine(rect1.Area(1.2,2.5,"M"));
+////Console.WriteLine(rect1.Area(50, rect1.Width, "m"));
 //Console.ReadKey();
 
 //public class Rectangle
@@ -396,7 +400,14 @@
 //    public double Width { get; set; }
 //    public double Height { get; set; }
 
-//    public string Area(double h, double w,string unit)
+
+//    public double Area()
+//    {
+//        double area = Width * Height;
+//        return area;
+//    }
+
+//    public string Area(double h, double w, string unit)
 //    {
 //        double area = h * w;
 //        return $"{area} {unit}";
@@ -409,27 +420,79 @@
 //}
 
 
+
 //string name = "   reza zohraby   ";
 //Console.WriteLine(name.Trim());
 
 
 //Console.ReadKey();
 
-Circle circle = new Circle();
-Console.WriteLine(circle.Area(3));
-Console.WriteLine(circle.Perimeter(3));
+//Circle circle = new Circle();
+//Console.WriteLine(circle.Area(3));
+//Console.WriteLine(circle.Perimeter(3));
 
-Console.ReadKey();
+//Console.ReadKey();
 
-public class Circle
-{ 
-    public double Area(double r)
-    {
-        return r * r * 3.14;
-    }
+//public class Circle
+//{ 
+//    public double Area(double r)
+//    {
+//        return r * r * 3.14;
+//    }
 
-    public double Perimeter(double r)
-    {
-        return 2 * r * 3.14;
-    }
-}
+//    public double Perimeter(double r)
+//    {
+//        return 2 * r * 3.14;
+//    }
+//}
+
+
+
+//class Person
+//{
+//    public string FirstName { get; set; }
+//    public string LastName { get; set; }
+//    public int Age { get; set; }
+
+//    public string ShowInfo()
+//    {
+//        Console.WriteLine();
+//    }
+//}
+
+
+
+
+
+//using Csharp_Term2_Fall_1404.Entities;
+
+//Calculator calculator = new Calculator();
+//Console.WriteLine(calculator.Add(20, 30));
+//Console.WriteLine(calculator.Mines(50, 50));
+//Console.WriteLine(calculator.Multply());
+//Console.WriteLine(calculator.Div());
+
+//Console.WriteLine("hello");
+
+//using Csharp_Term2_Fall_1404.Entities;
+
+//Product product1 = new Product()
+//{
+//    Name = "Laptop",
+//    Type = "Electronics",
+//    Price = 1500.00,
+//    DiscountPrice = 1200.00
+//};
+
+//product1.GetProductInfo();
+
+using Csharp_Term2_Fall_1404.Entities;
+
+Wallet myWallet = new Wallet();
+myWallet.Balance = 2500.75;
+
+myWallet.GetBalance();
+myWallet.Deposit(500.25);
+myWallet.GetBalance();
+myWallet.Withdraw(4000);
+myWallet.GetBalance();
